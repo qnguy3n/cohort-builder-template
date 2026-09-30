@@ -1,0 +1,20 @@
+node_modules
+.svelte-kit
+build
+.env
+.env.*
+!.env.example
+.DS_Store
+.vite
+*.log
+.vercel
+
+# PHI / local data stores — never commit (defense-in-depth; the live store lives
+# under ml-processing-service/_phi_local but guard here too)
+*.db
+*.sqlite
+*.sqlite3
+_phi_local/
+*-fhir-bundles.zip
+
+.claude/
